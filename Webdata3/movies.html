@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+  Student Name: Abhinav Bansal 1001011869
+  URL:http://omega.uta.edu/~axb1869/project2/movies.html?
+-->
+<html lang="en">
+  <head>
+    <title>Display Movie Information</title>
+    <meta charset="utf-8"/>
+	<h1 style="background-color:#FFA500;"> The Movie data base </h1>
+	
+    <script type="text/javascript" src="movies.js"></script>
+  </head>
+  
+  <body onload="initialize();">
+			<div id="container" style="width:500px"> 
+			
+				<form style="background-color:#FFA500;">
+					<label>Movie title: <input type="text" id="form-input" value="Search" onclick="removeText(event);"/></label>
+					<input type="button" onclick="startSearch();" value="Display Info"/>
+				</form>
+		   		<!--<div id="output" style="background-color:#FFD700;width:300px;float:left;">something  &nbsp;</div>  -->
+		   	<!--<button type="button" onclick="cliclMe(event);">Click Me!</button>  -->
+		   	<!-- <div id="disp" > something  &nbsp;</div> -->
+			<div id="flag" > Created by Abhinav Bansal 1869 &nbsp;</div>
+			<div id="disp2" > &nbsp;</div>
+			<div id="detail" style=" cursor: auto; width: 550px; height: 500px; position: absolute; left: 700px; top: 75px;" >
+				<div id="title" style="position: relative; left:250px; top: 10px;"> &nbsp;</div>
+				<div id="cast" style="position: relative; left:250px; top: 5px;"> &nbsp;</div>
+				<img id="poster"  style=" margin: 0; padding: 0px; height: 250px; width: 225px; position: absolute; top: 0px;" />
+				<div id="info" style="width:550px; position: absolute;  left:5px; top: 260px;">&nbsp;</div>
+				<div id="genre" style="width:550px; position: relative;  left:5px; top: 300px;"> </div>
+				
+			</div>
+			
+  </body>
+</html>
